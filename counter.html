@@ -1,0 +1,16 @@
+<html>
+<body>
+  <div id="counter" style="font-size: 30px; font-weight: bold;"></div>
+  <script>
+    let count = 0;
+    let ratePerSecond = 8000; // Straws disposed per second
+
+    function updateCounter() {
+      count += ratePerSecond;
+      document.getElementById("counter").innerText = count.toLocaleString();
+    }
+
+    setInterval(updateCounter, 1000); // Update every second
+  </script>
+</body>
+</html>
